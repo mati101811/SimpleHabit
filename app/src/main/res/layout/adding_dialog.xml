@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nowe zadanie"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/tresc_zadania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="treść"
+        android:minWidth="300dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Godzina zakończenia"
+        android:textSize="20sp" />
+
+    <TimePicker
+
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Powtarzanie"
+        android:textSize="20sp" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:checkedButton="@id/powtorz_raz"
+        android:minWidth="260dp"
+        android:id="@+id/powtarzanie"
+        android:gravity="center"
+        app:selectionRequired="true"
+
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/powtorz_raz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@drawable/segmented_button_bg"
+            android:minWidth="130dp"
+            android:fontFamily="@font/sulphur_point"
+            android:letterSpacing="0.01"
+            android:layout_weight="1"
+            app:cornerRadius="15dp"
+            android:text="Raz" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/powtorz_codziennie"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sulphur_point"
+            app:backgroundTint="@drawable/segmented_button_bg"
+            android:minWidth="130dp"
+            android:letterSpacing="0.01"
+            app:cornerRadius="15dp"
+            android:layout_weight="1"
+            android:text="Codziennie" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/anuluj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/sulphur_point"
+            android:letterSpacing="0.01"
+            android:minWidth="120dp"
+            android:text="Anuluj"
+            app:cornerRadius="15dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dodaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/sulphur_point"
+            android:letterSpacing="0.01"
+            android:minWidth="120dp"
+            app:cornerRadius="15dp"
+            android:text="Dodaj" />
+
+    </LinearLayout>
+</LinearLayout>

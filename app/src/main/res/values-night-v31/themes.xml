@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SimpleHabit" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimaryVariant">@color/primaryVariantDark</item>
+        <item name="colorPrimary">@color/primaryDark</item>
+        <item name="colorPrimaryContainer">@color/primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorSecondaryVariant">@color/secondaryVariantDark</item>
+        <item name="colorSecondary">@color/secondaryDark</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/secondaryVariantDark</item>
+
+        <item name="colorAccent">@color/accentDark</item>
+        <item name="colorButtonNormal">@color/primary</item>
+        <item name="colorSurface">@color/primary</item>
+        <item name="colorSecondaryFixed">@color/itemDark</item>
+        <item name="android:windowSplashScreenBackground">#231A0D</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_dark</item>
+
+    </style>
+</resources>

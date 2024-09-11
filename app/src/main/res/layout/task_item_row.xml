@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="?attr/colorSecondaryFixed"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Name" />
+
+    <TextView
+        android:id="@+id/taskStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date" />
+
+    <TextView
+        android:id="@+id/taskEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date" />
+
+    <TextView
+        android:id="@+id/notificationTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Time" />
+
+    <TextView
+        android:id="@+id/taskRecurring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recurring" />
+
+    <TextView
+        android:id="@+id/taskActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="active" />
+
+    <TextView
+        android:id="@+id/taskDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="done" />
+</LinearLayout>
